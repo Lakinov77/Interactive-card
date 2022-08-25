@@ -1,0 +1,227 @@
+body{
+    margin: 0;
+    padding: 0;   
+    background:white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+*{
+    font-family:"kumbh" ;
+}
+@font-face {
+    font-family:"kumbh" ;
+    src: url("SpaceGrotesk-Regular.ttf");
+}
+#background{
+    width: 30%;
+    height:100%;
+    background-image: url("images/bg-main-desktop.png");
+    position: absolute;
+    z-index: 0;
+    left: 0;
+}
+#all{
+    width:80%;
+    height:70%;
+    z-index: 1;
+    display:flex;
+    flex-direction: row;
+    position: relative;
+}
+#cards{
+    width:50%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#front-card{
+    height: 43%;
+    width:70%;
+    background-image: url("images/bg-card-front.png");
+    border-radius: 10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+#back-card{
+    height: 43%;
+    width:70%;
+    align-self: center;
+    background-image: url("images/bg-card-back.png");
+    border-radius: 10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: flex-end;
+}
+#back-card p{
+    margin-right: 10%;
+    color: white;
+    font-family:"kumbh" ;
+    letter-spacing: 2.5px;
+}
+#form{
+    width:50%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
+}
+#logo{
+    height:40%;
+}
+#inf{
+    height:40%;
+    width:90%;
+    color: white;
+    font-family:"kumbh" ;
+    letter-spacing: 2px;
+    
+}
+#inf h1{
+    padding:0;
+    margin: 0;
+    margin-top: 5%;
+}
+#logo{
+    width:90%;
+}
+#aling{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+form{
+    display:flex;
+    flex-direction:column;
+    height:70%;
+    width:70%;
+    justify-content:space-evenly;
+}
+input{
+    height:10%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 18px;
+}
+input:focus{
+    border: 2px solid hsl(249, 99%, 64%); 
+    outline: none;
+}
+::placeholder{
+    color: rgb(180, 180, 180);
+}
+#exp{
+    height:20%;
+   
+}
+#data{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.cvc{
+    margin-right: 40%;
+}
+#exp input{
+    height:50%;
+}
+#Confirm{
+    height:15%;
+    border: none;
+    background-color: hsl(278, 68%, 11%);
+    color:white;
+    font-size: 20px ;
+}
+#date{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+#final{
+    width:50%;
+    height:100%;
+    background-color: rgb(255, 255, 255);
+    position:absolute;
+    left:50%;
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+#Continue{
+    width:60%;
+    height:10%;
+    background-color: hsl(278, 68%, 11%);
+    color:white;
+
+}
+@media screen and (max-width: 700px) {
+    *{
+        font-size: 12px;
+    }
+    body{
+        align-items: flex-end;
+        justify-content:flex-start;
+    }
+    #all{
+        flex-direction: column;
+        width: 100%;
+        height:100%;
+    }
+    #background{
+        height:35%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    #cards{
+        width: 100%;
+        position:relative;
+        height:80%;
+    }
+    #front-card{
+        position:absolute;
+        background-size:100% 100% ;
+        left: 5%;
+        z-index: 1;
+        height:50%;
+        top:40% ;
+    }
+    #back-card{
+        background-size:100% 100% ;
+        position:absolute;
+        top: 10%;
+        z-index: 0;
+        height:50%;
+
+        right: 5%;
+    }
+    #card_num{
+        font-size: 16px;
+    }
+    #form{
+        width:100%;
+    }
+    form{
+        width:90%;
+height:90%;
+    }
+    input{
+        font-size: 100%;
+    }
+    #final{
+        width:100%;
+        left: 0;
+        height:65%;
+        bottom: 0;
+    }
+}
